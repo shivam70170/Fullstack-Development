@@ -1,0 +1,19 @@
+#container{
+    height: 400px;
+    width: 400px;
+    border: 2 sloid greenyellow;
+}
+.A{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    border: 2 solid black;
+}
+#F{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    border: 2 solid black;
+    background-color: white;
+    display: flex;
+}
