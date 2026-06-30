@@ -1,3 +1,6 @@
+// ## switch method ##
+
+
 let color = "yellow";
 
 if (color === "red"){
@@ -82,6 +85,8 @@ switch(days){
         console.log("Enter a wrong number ")
 
 }
+//## Promt and alert learn 
+
 
 // let fullname = prompt("Enter your fullname : ");
 // let age = prompt("Enter your age : ");
@@ -105,13 +110,18 @@ if (num2[num4] == num3[num5]){
     console.log("Both's number last digit differ.")
 }
 
+// ## toUpperCase() or toLowerCase() methods
+
 let str1 = "Shivam Sharma"
 
 console.log(str1.toUpperCase());
 
+// ## indeOf metihod 
+
 let ptr = str1.indexOf("v");
 console.log(ptr);
 
+//  ## slice method 
 
 let str2 = "ShivamSharma";
 
@@ -121,8 +131,26 @@ console.log(str2.slice(0,8));
 
 console.log(str2.slice(-2));
 
+// ## repeat method 
+
 console.log(str2.replace("S","v"));
 
 console.log(str2.repeat(2));
 
-let msg = "  help  ";
+// ## Arrays are mutable
+
+let students = ["Shivam", "Sharma", "Aman"];
+
+students[0] = "Sharma";
+
+// ## merge 2 array 
+
+let arr1 = [1,2,3,4,6,5];
+
+let arr2 = ['a','b','c','d'];
+
+let mergearr = arr1.concat(arr2);
+
+// ## reverse an array 
+
+arr1.reverse();
