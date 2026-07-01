@@ -154,3 +154,17 @@ let mergearr = arr1.concat(arr2);
 // ## reverse an array 
 
 arr1.reverse();
+
+// ## slicing 
+
+console.log(arr2.slice(2));
+
+console.log(arr2.slice(-1));
+
+// ## splice 
+
+console.log(arr2.splice(4));
+
+console.log(arr2.splice(1,2,"f","g"));
+console.log(arr2);
+
