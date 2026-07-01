@@ -168,3 +168,41 @@ console.log(arr2.splice(4));
 console.log(arr2.splice(1,2,"f","g"));
 console.log(arr2);
 
+// ##practice ques
+
+let prac = ["january","july","march","august"];
+
+prac.shift();
+
+prac.splice(1,0,"june");
+console.log(prac);
+
+let prac2 = ["c","c++","html","javascript","python","java","c#","sql"];
+console.log(prac2);
+
+console.log(prac2.reverse());
+
+console.log(prac2.indexOf('javascript'));
+
+// ## Array reference 
+
+let arre1 = [];
+
+let arre2 = [];
+
+console.log(arre1 === arre2);
+
+console.log(arre1 == arre2);
+
+let arrecopy = arre1;
+
+console.log(arrecopy == arre1);
+
+// ## nested array
+
+let nestarray = [[1,2],[3,4],[5,6]];
+
+console.log(nestarray);
+
+
+
