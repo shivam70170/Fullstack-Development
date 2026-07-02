@@ -45,21 +45,21 @@ while(i<=5){
     i++;
 }
 
-// console.log("Favorite Movie ")
+console.log("Favorite Movie ")
 
-// const favorite = "bahubali";
+const favorite = "bahubali";
 
-// let guess = prompt("Enter a movie which is my favorite movie : ");
+let guess = prompt("Enter a movie which is my favorite movie : ");
 
-// while((favorite != guess) && (guess != "quit")){
-//     guess = prompt("Wrong guess.Retry again! : " );
-// }
-// if(guess == "quit"){
-//     console.log("don,t worry its just fun");
-// }
-// if(guess == favorite){
-//     console.log("congrulations you guess the right movie");
-// }
+while((favorite != guess) && (guess != "quit")){
+    guess = prompt("Wrong guess.Retry again! : " );
+}
+if(guess == "quit"){
+    console.log("don,t worry its just fun");
+}
+if(guess == favorite){
+    console.log("congrulations you guess the right movie");
+}
 
 console.log("break keyword use")
 
@@ -71,4 +71,47 @@ while(a <= 6){
     }
     console.log(a);
     a++;
+}
+
+// loops with arrays
+
+let fruits = ["mango","apple","banana","litchi","orange"];
+
+for(let i = 0; i < fruits.length; i++){
+    console.log(i,fruits[i]);
+}
+
+//## Nested loop with Nested Array 
+
+let heroes = [["ironman","spiderman","thor"],["superman","wonderwoman","flash"]];
+
+for(let i=0; i<heroes.length; i++){
+    console.log(`List # ${i}`);
+    for(let j=0; j<heroes[i].length; j++){
+        console.log(heroes[i][j]);
+    }
+}
+
+//## for of loop 
+
+let cars = ["honda","bmw","swift","rangerover","audi"];
+
+for(a of cars){
+    console.log(a);
+}
+
+let str = "shivamsharme";
+
+for (b of str){
+    console.log(b);
+}
+
+// //##nested for of loop on console 
+
+let abc = [["der","fer","ser"],["ler","mer","her"]];
+
+for(ter of abc){
+    for(xer of ter){
+        console.log(xer);
+    }
 }
