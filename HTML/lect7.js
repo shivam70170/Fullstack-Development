@@ -93,3 +93,61 @@ let nun = function(nen) {
 }
 console.log(nun(5));
 
+let helle = function(){
+    console.log("namesty");
+}
+
+console.log(helle());
+
+console.log(helle);
+
+// ## Higher Order Functions
+
+function multigreet(func, n ) {
+    for(let i = 1; i<=n; i++){
+        func();
+    }
+}
+
+let greet = function(){
+    console.log("hello");
+}
+
+multigreet(greet,3);
+
+function oddoreventest(request){
+    if(request == "odd"){
+        return function(n){
+            console.log(!(n%2==0));
+        }
+    }else if(request == "even"){
+        return function(n){
+            console.log(n%2==0);
+        }
+    }else{
+        console.log("Wrong request")
+    }
+}
+let request = "even";
+
+let func = oddoreventest(request);
+
+console.log(func);
+
+// ##Methods 
+
+const calculator = {
+    add : function(a,b){
+        return a + b;
+    },
+    sub : function(a,b){
+        return a - b;
+    },
+    mul : function(a,b){
+        return a * b;
+    }
+};
+
+calculator.div = function(a,b){
+    return a / b;
+};
