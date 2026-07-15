@@ -35,3 +35,39 @@ catch(e){
 }
 console.log("hello");
 console.log("hello");
+
+// ## Arrow Functions 
+
+const sum = (a,b) => {
+    console.log(a + b);
+}
+
+// ## setTimeout functions 
+
+console.log("Hi there !");
+
+setTimeout( () =>{
+    console.log("Shivam Sharma ");
+},4000);
+
+console.log("Welcome to ");
+
+// // ## set interval 
+
+// setInterval(() => {
+//     console.log("you learn about intervals");
+// },3000);
+
+console.log("setInterval");
+
+// write an arrow function which returns n square .
+
+const squ=  (n) => (n*n)
+
+const id1 = setInterval(() =>{
+        console.log("Hello!");
+},2000);
+
+setTimeout(() => {
+    clearInterval(id1)
+}, 10000);
