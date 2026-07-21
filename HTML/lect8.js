@@ -52,7 +52,7 @@ setTimeout( () =>{
 
 console.log("Welcome to ");
 
-// // ## set interval 
+// ## set interval 
 
 // setInterval(() => {
 //     console.log("you learn about intervals");
@@ -71,3 +71,86 @@ const id1 = setInterval(() =>{
 setTimeout(() => {
     clearInterval(id1)
 }, 10000);
+
+// ## ForEach functions 
+
+let arr = [{
+    name : "Shivam",
+    age : 19
+},
+{
+    marks : 94.4,
+    eng : 79
+},
+{
+   math : 84,
+   phy : 96 
+}]
+
+arr.forEach((student) => {
+    console.log(student.marks);
+});
+
+// ## Map 
+
+let arr1 = [1,2,3,4];
+
+let double = arr1.map(arr2 => {
+    return arr2 * 2;
+});
+
+console.log(double);
+
+
+// ## fiter 
+
+let nums = [1,4,6,8,7,9,4,2,0];
+
+let nums1 = nums.filter((num) => {
+    return num % 2 == 0;
+})
+
+console.log(nums1);
+
+// ## Every  
+
+let num2 = [2,4,6,8,1];
+
+let num3 = num2.every((el) => {
+    return el % 2 == 0;
+});
+
+console.log(num3);
+
+//## some 
+
+let num4 = [2,4,6,8,10,1,3,7,9,3];
+
+let num5 = num4.some((el) => {
+    return el % 2 == 0;
+});
+
+console.log(num5);
+
+// ## Reduce 
+
+let num6 = [2,4,6,8,10,7,9,3];
+
+let num7 = num6.reduce((res,el) => (res + el));
+
+console.log(num7);
+
+// ## Maximun number in an array using reduce function
+
+let arr3 = [3,4,5,6,9,90];
+
+let max = arr3.reduce((max, el) => {
+    if(max < el){
+        return el;
+    }else{
+        return ;
+    }
+
+    console.log(max);
+});
+
