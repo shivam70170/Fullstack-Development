@@ -154,3 +154,71 @@ let max = arr3.reduce((max, el) => {
     console.log(max);
 });
 
+//## Default Parameters 
+
+function sum1 (a,b = 2){
+    return a + b;
+}
+
+console.log(sum1(9));
+
+// ## Spread 
+
+let arr6 = [1,2,3,40,1,2,0,8472,47,28,0,1,];
+
+console.log(Math.min(...arr6));  //... => means spread into iterables parts.
+
+// ## Spread with literals 
+
+let arr7 = [...arr6];
+
+console.log(arr7);
+
+let str = "Shivam Sharma";
+
+let name = [...str];
+
+console.log(name);
+
+const data = {
+    email : "shivam@gmail.com",
+    password : 57
+}
+
+console.log(data);
+
+const dataCpoy = {...data, id : 123};
+
+console.log(dataCpoy);
+
+// ## Rest ==> opposite to spread
+
+function sume (...args){
+      for (let i = 0; i<args.length;i++){
+        console.log(`You gave us : ${args[i]}`)
+      }
+}
+
+// ## Destructuring
+
+
+let names = ["tony","bruce","stand","dhumsdae","xyz"];
+
+let [winnner,runnerup,...others] = names;
+
+console.log(winnner,runnerup);
+
+// ## Destructuring with Objects
+
+const students = {
+    name : "Karan",
+    class : 9,
+    age : 14,
+    subjects : ["hindi","english","math","science","social science"],
+    username : "karan123",
+    password : 1234
+};
+
+const{username : user, password : pass} = students;
+
+console.log(user);
