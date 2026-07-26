@@ -37,3 +37,12 @@ console.dir(para.innerText);
 console.dir(para.textContent);
 
 console.dir(para.innerHTML);
+
+// ## getter and setter 
+
+let img = document.querySelector('img');
+
+console.log(img.getAttribute('id'));
+
+console.log(img.setAttribute('id','vakue'));
+
