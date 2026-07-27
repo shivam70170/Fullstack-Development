@@ -28,7 +28,7 @@
 // // ##  using properties & Methods 
 
 
-let para = document.querySelector('p');
+// let para = document.querySelector('p');
 
 // console.dir(para);
 
@@ -40,59 +40,128 @@ let para = document.querySelector('p');
 
 // // ## getter and setter 
 
-let img = document.querySelector('img');
+// let img = document.querySelector('img');
 
 // console.log(img.getAttribute('id'));
 
 // console.log(img.setAttribute('id','vakue'));
 
-// ## Manipulating style ##
+// // ## Manipulating style ##
 
-let heading = document.querySelector('h1');
+// let heading = document.querySelector('h1');
 
-heading.style.color = 'purple';
+// heading.style.color = 'purple';
 
-heading.style.backgroundColor = "lightGreen";
+// heading.style.backgroundColor = "lightGreen";
 
-console.dir(heading.style);
+// console.dir(heading.style);
 
-let links = document.querySelectorAll('.box a');
+// let links = document.querySelectorAll('.box a');
 
-// for(let i = 0; i <length.links; i++){
-//     links[i].style.color = "purple";
-// }
+// // for(let i = 0; i <length.links; i++){
+// //     links[i].style.color = "purple";
+// // }
 
 // for(link of links){
 //     link.style.color = "purple";
 // }
 
 
-// ## classLists ##
+// // ## classLists ##
 
-console.dir(heading.classList);
+// console.dir(heading.classList);
 
-console.dir(img.classList);
+// console.dir(img.classList);
 
-console.dir(para.classList);
+// console.dir(para.classList);
 
-// ## add class to any objects
-
-
-heading.classList.add("green");
-
-console.dir(heading.classList);
-
-// ##remove class to any object
+// // ## add class to any objects
 
 
-heading.classList.remove("green");
+// heading.classList.add("green");
 
-console.dir(heading.classList);
+// console.dir(heading.classList);
 
-// ## toggle add or remove with after refresh change it.
+// // ##remove class to any object
 
-console.dir(heading.classList.toggle("green"));//true
 
-console.dir(heading.classList.toggle("green"));//false
+// heading.classList.remove("green");
 
-console.dir(heading.classList.toggle("green"));//true
+// console.dir(heading.classList);
+
+// // ## toggle add or remove with after refresh change it.
+
+// console.dir(heading.classList.toggle("green"));//true
+
+// console.dir(heading.classList.toggle("green"));//false
+
+// console.dir(heading.classList.toggle("green"));//true
+
+// // ## Navigation 
+
+// // ## parentElement 
+
+// let h4 = document.querySelector('h4');
+
+// console.dir(h4.parentElement);
+
+// ## children 
+
+// let box = document.querySelector('.box');
+
+// console.dir(box.children);
+
+// // ## previousElementSibling / nextElementSibling
+
+// img.previousElementSibling.computedStyleMap.color = "purple";
+
+// console.dir(img.previousElementSibling);
+
+// // ## Adding Elements on Page ##
+
+// let newP = document.createElement('p');
+
+// console.dir(newP);
+
+// newP.innerText = "hello everyone ! i am new paragraph.";
+
+// // ## appendChild  ##
+
+// let body = document.querySelector('body');
+
+// body.appendChild(newP);
+
+// // ## append ##
+
+// newP.append("this line insert with append "); 
+
+// // ## prepend ## 
+
+// let box = document.querySelector('.box');
+
+let btn = document.createElement('button');
+
+// btn.innerText = "click me";
+
+// box.prepend(btn);
+
+//  ## insertAdjacent(where, Element) ##
+
+// beforebegin,afteregin,beforeend,afterend ##
+
+btn.innerText = "NEW BUTTON";
+
+let p = document.querySelector('p');
+
+p.insertAdjacentElement("beforebegin",btn);
+
+p.insertAdjacentElement("afterbegin",btn);
+
+p.insertAdjacentElement("beforeend",btn);
+
+p.insertAdjacentElement("afterend",btn);
+
+// ## Removing elements
+
+btn.remove();
+
