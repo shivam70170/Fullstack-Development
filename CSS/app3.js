@@ -1,149 +1,149 @@
-// //## selecting Elements ----> getElementByClassName
+//## selecting Elements ----> getElementByClassName
 
-// let smallImg = document.getElementsByClassName("oldImg");
+let smallImg = document.getElementsByClassName("oldImg");
 
-// for(let i = 0; i<smallImg.length; i++){
-//     smallImg[i].src = "assets-20260723T170100Z-1-001/assets/spiderman_img.png";
-//     console.dir(`The value of img ${i} is changed`);
-// };
+for(let i = 0; i<smallImg.length; i++){
+    smallImg[i].src = "assets-20260723T170100Z-1-001/assets/spiderman_img.png";
+    console.dir(`The value of img ${i} is changed`);
+};
 
-// // ## getElementByTagName
+// ## getElementByTagName
 
-// console.dir(document.getElementsByTagName("P"));
-// document.getElementsByTagName("P")[1].innerHTML = "Shivam Sharma"
-
-
-// //  ## Query Selector ## 
-
-// console.dir(document.querySelector('h1'));
-
-// console.dir(document.querySelector('.boxLink'));
-
-// console.dir(document.querySelector('#description'));
-
-// console.dir(document.querySelector("div a"));
-
-// console.dir(document.querySelectorAll("div a"));
-
-// // ##  using properties & Methods 
+console.dir(document.getElementsByTagName("P"));
+document.getElementsByTagName("P")[1].innerHTML = "Shivam Sharma"
 
 
-// let para = document.querySelector('p');
+//  ## Query Selector ## 
 
-// console.dir(para);
+console.dir(document.querySelector('h1'));
 
-// console.dir(para.innerText);
+console.dir(document.querySelector('.boxLink'));
 
-// console.dir(para.textContent);
+console.dir(document.querySelector('#description'));
 
-// console.dir(para.innerHTML);
+console.dir(document.querySelector("div a"));
 
-// // ## getter and setter 
+console.dir(document.querySelectorAll("div a"));
 
-// let img = document.querySelector('img');
+// ##  using properties & Methods 
 
-// console.log(img.getAttribute('id'));
 
-// console.log(img.setAttribute('id','vakue'));
+let para = document.querySelector('p');
 
-// // ## Manipulating style ##
+console.dir(para);
 
-// let heading = document.querySelector('h1');
+console.dir(para.innerText);
 
-// heading.style.color = 'purple';
+console.dir(para.textContent);
 
-// heading.style.backgroundColor = "lightGreen";
+console.dir(para.innerHTML);
 
-// console.dir(heading.style);
+// ## getter and setter 
 
-// let links = document.querySelectorAll('.box a');
+let img = document.querySelector('img');
 
-// // for(let i = 0; i <length.links; i++){
-// //     links[i].style.color = "purple";
-// // }
+console.log(img.getAttribute('id'));
 
-// for(link of links){
-//     link.style.color = "purple";
+console.log(img.setAttribute('id','vakue'));
+
+// ## Manipulating style ##
+
+let heading = document.querySelector('h1');
+
+heading.style.color = 'purple';
+
+heading.style.backgroundColor = "lightGreen";
+
+console.dir(heading.style);
+
+let links = document.querySelectorAll('.box a');
+
+// for(let i = 0; i <length.links; i++){
+//     links[i].style.color = "purple";
 // }
 
-
-// // ## classLists ##
-
-// console.dir(heading.classList);
-
-// console.dir(img.classList);
-
-// console.dir(para.classList);
-
-// // ## add class to any objects
+for(link of links){
+    link.style.color = "purple";
+}
 
 
-// heading.classList.add("green");
+// ## classLists ##
 
-// console.dir(heading.classList);
+console.dir(heading.classList);
 
-// // ##remove class to any object
+console.dir(img.classList);
+
+console.dir(para.classList);
+
+// ## add class to any objects
 
 
-// heading.classList.remove("green");
+heading.classList.add("green");
 
-// console.dir(heading.classList);
+console.dir(heading.classList);
 
-// // ## toggle add or remove with after refresh change it.
+// ##remove class to any object
 
-// console.dir(heading.classList.toggle("green"));//true
 
-// console.dir(heading.classList.toggle("green"));//false
+heading.classList.remove("green");
 
-// console.dir(heading.classList.toggle("green"));//true
+console.dir(heading.classList);
 
-// // ## Navigation 
+// ## toggle add or remove with after refresh change it.
 
-// // ## parentElement 
+console.dir(heading.classList.toggle("green"));//true
 
-// let h4 = document.querySelector('h4');
+console.dir(heading.classList.toggle("green"));//false
 
-// console.dir(h4.parentElement);
+console.dir(heading.classList.toggle("green"));//true
+
+// ## Navigation 
+
+// ## parentElement 
+
+let h4 = document.querySelector('h4');
+
+console.dir(h4.parentElement);
 
 // ## children 
 
-// let box = document.querySelector('.box');
+let box = document.querySelector('.box');
 
-// console.dir(box.children);
+console.dir(box.children);
 
-// // ## previousElementSibling / nextElementSibling
+// ## previousElementSibling / nextElementSibling
 
-// img.previousElementSibling.computedStyleMap.color = "purple";
+img.previousElementSibling.computedStyleMap.color = "purple";
 
-// console.dir(img.previousElementSibling);
+console.dir(img.previousElementSibling);
 
-// // ## Adding Elements on Page ##
+// ## Adding Elements on Page ##
 
-// let newP = document.createElement('p');
+let newP = document.createElement('p');
 
-// console.dir(newP);
+console.dir(newP);
 
-// newP.innerText = "hello everyone ! i am new paragraph.";
+newP.innerText = "hello everyone ! i am new paragraph.";
 
-// // ## appendChild  ##
+// ## appendChild  ##
 
-// let body = document.querySelector('body');
+let body = document.querySelector('body');
 
-// body.appendChild(newP);
+body.appendChild(newP);
 
-// // ## append ##
+// ## append ##
 
-// newP.append("this line insert with append "); 
+newP.append("this line insert with append "); 
 
-// // ## prepend ## 
+// ## prepend ## 
 
-// let box = document.querySelector('.box');
+let box = document.querySelector('.box');
 
 let btn = document.createElement('button');
 
-// btn.innerText = "click me";
+btn.innerText = "click me";
 
-// box.prepend(btn);
+box.prepend(btn);
 
 //  ## insertAdjacent(where, Element) ##
 
@@ -164,4 +164,3 @@ p.insertAdjacentElement("afterend",btn);
 // ## Removing elements
 
 btn.remove();
-
