@@ -1,31 +1,62 @@
-let todo = [];
+// let todo = [];
 
-let req = prompt("Please Enter your Request");
+// let req = prompt("Please Enter your Request");
 
-while(true){
-    if(req == "quit"){
-        console.log("Quiting the todo");
-        break;
+// while(true){
+//     if(req == "quit"){
+//         console.log("Quiting the todo");
+//         break;
+//     }
+
+//     if(req == "list"){
+//         console.log("-------------------");
+//         for(let i=0; i<todo.length;i++){
+//             console.log(i,todo[i]);
+//         }
+//         console.log("--------------------")
+
+//     } else if (req == "add"){
+//         let task = prompt("Enter task which you want to add : ");
+//         todo.push(task);
+//         console.log("task added");
+//     } else if(req == "delete"){
+//         let idx = prompt("Enter which index you want to delete ");
+//         todo.splice(idx,1);
+//         console.log("task deleted");
+//     } else{
+//         console.log("Wrong request")
+//     }
+
+//     req = prompt("Please Enter your Request"); 
+// }
+
+let btn = document.querySelector("button");
+let input = document.querySelector("input");
+let ul = document.querySelector("ul");
+
+btn.addEventListener("click",function(){
+
+    let item = document.createElement("li");
+
+    item.innerText = input.value;
+
+    let delbtn = document.createElement("button");
+
+    delbtn.innerText ="delete";
+
+    delbtn.classList.add("delete");
+    
+    item.appendChild(delbtn);
+
+    ul.appendChild(item);
+
+    input.value = "";
+});
+
+ul.addEventListener("click",function(event){
+    if(event.target.nodeName == "BUTTON"){
+        let listitem = event.target.parentElement;
+        listitem.remove();
+        console.log("delete");
     }
-
-    if(req == "list"){
-        console.log("-------------------");
-        for(let i=0; i<todo.length;i++){
-            console.log(i,todo[i]);
-        }
-        console.log("--------------------")
-
-    } else if (req == "add"){
-        let task = prompt("Enter task which you want to add : ");
-        todo.push(task);
-        console.log("task added");
-    } else if(req == "delete"){
-        let idx = prompt("Enter which index you want to delete ");
-        todo.splice(idx,1);
-        console.log("task deleted");
-    } else{
-        console.log("Wrong request")
-    }
-
-    req = prompt("Please Enter your Request"); 
-}
+});
