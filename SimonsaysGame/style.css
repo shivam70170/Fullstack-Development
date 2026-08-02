@@ -1,0 +1,45 @@
+body{
+    text-align: center;   
+    background-color: rgb(191, 173, 149);
+}
+
+.box-continer{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border-radius: 15%;
+    border: 10px solid blanchedalmond;
+    margin: 0.8rem;
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.yellow{
+    background-color: rgb(214, 214, 82);
+}
+
+.purple{
+    background-color: rgb(246, 100, 222);
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.flash{
+    background-color: white;
+}
+
+.userFlash{
+    background-color: green;
+}
+
+b{
+    color: brown;
+}
