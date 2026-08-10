@@ -8,6 +8,7 @@ app.listen(port,()=>{
     console.log(`listen from port : ${port}`);
 })
 
+app.use(express.static(path.join(__dirname,"public")));
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"/views"));
 
@@ -22,6 +23,11 @@ app.get("/rolldice",(req,res) => {
 
 app.get("/ig/:username",(req,res) => {
     let {username} = req.params;
-    const followers = ["shivam","harsh","omdeep","raghav"];
-    res.render("instagram",{username, followers});
+    const instaData = require("./data.json");
+    const data = instaData[username];
+    if(data){
+        res.render("instagram",{data});
+    }else{
+        res.render("error")
+    }
 });
