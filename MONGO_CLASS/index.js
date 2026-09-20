@@ -22,12 +22,12 @@ const User = mongoose.model("User",userSchema);
 
 // ##update
 
-User.findOneAndUpdate({name : "Tony"},{age : 42},{new:true}).then((res) => {
-  console.log(res);
-})
-.catch((err) => {
-  console.log(err);
-});
+// User.findOneAndUpdate({name : "Tony"},{age : 42},{new:true}).then((res) => {
+//   console.log(res);
+// })
+// .catch((err) => {
+//   console.log(err);
+// });
 
 // ## find methods
 
@@ -91,3 +91,31 @@ User.findOneAndUpdate({name : "Tony"},{age : 42},{new:true}).then((res) => {
 // }).catch((err) => {
 //   console.log(err);
 // });
+
+// # # deleteOne 
+
+// User.deleteOne({name : "Bruce"}).then((res) => {
+//   console.log(res);
+// })
+// .catch((err) => {
+//   console.log(err);
+// });
+
+// deleteMany 
+
+// User.deleteMany({age : 48}).then((res) => {
+//   console.log(res);
+// })
+// .catch((err) => {
+//   console.log(err);
+// });
+
+
+// delete findByIdAndDelete
+
+User.findByIdAndDelete("6aa5435046d46017f9e36a52").then((res) => {
+  console.log(res);
+})
+.catch((err) => {
+  console.log(err);
+});
