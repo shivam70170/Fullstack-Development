@@ -1,0 +1,28 @@
+body{
+    margin-left: 30px;
+}
+h2{
+    color: rgb(56, 238, 120);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+div{
+     border: 2px rgb(77, 239, 245) solid;
+     height: 100px;
+     width: 850px;
+     text-align: center;
+     justify-content: center;
+     display: flex;
+     background-color: antiquewhite;
+     color: rgb(34, 44, 231);
+}
+.form{
+    justify-content: center;
+    display: flex;
+}
+button{
+    color: brown;
+    background-color: aliceblue;
+    border: 2px black solid;
+}
